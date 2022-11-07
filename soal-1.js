@@ -1,5 +1,5 @@
 //* 1. find()
-// ? find merupakan merupakan build in function dari array, dimana dia akan mencari value dari sebuah array berdasarkan kondisi tertentu. walaupun nantinya akan ada lebih dari satu value yang di hasilkan, yang diambil tetap value yang pertama sesuai dengan kondisi. dan return dari find ini adalah sesuai dengan value yang di dapat.
+//? find merupakan merupakan build in function dari array, dimana dia akan mencari value dari sebuah array berdasarkan kondisi tertentu. walaupun nantinya akan ada lebih dari satu value yang di hasilkan, yang diambil tetap value yang pertama sesuai dengan kondisi. dan return dari find ini adalah sesuai dengan value yang di dapat.
 
 const array1 = [5, 11, 8, 130, 44];
 const found = array1.find((element) => element > 10);
