@@ -1,15 +1,14 @@
 const seleksiNilai = (nilaiAwal, nilaiAkhir, dataArray) => {
   if (nilaiAwal < nilaiAkhir) {
-    if (dataArray.length <= 5) {
-      console.log("Jumlah angka dalam dataArray harus lebih dari 5");
-    } else {
+    if (dataArray.length > 5) {
       const filtered = dataArray.filter(
         (element) => element >= nilaiAwal && element <= nilaiAkhir
       );
-
       filtered.length <= 0
         ? console.log("Nilai tidak ditemukan")
         : console.log(filtered.sort((a, b) => a - b));
+    } else {
+      console.log("Jumlah angka dalam dataArray harus lebih dari 5");
     }
   } else {
     console.log("Nilai akhir harus lebih besar dari nilai awal");
