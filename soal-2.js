@@ -26,11 +26,9 @@ const searchName = (key, length, callback) => {
 
   let arrayLength = filtered.length;
 
-  while (arrayLength > length) {
-    filtered.pop();
-    arrayLength--;
-  }
-  callback(filtered);
+  arrayLength > length
+    ? callback(filtered.slice(0, length))
+    : callback(filtered);
 };
 
 const getFiltered = (filtered) => {
