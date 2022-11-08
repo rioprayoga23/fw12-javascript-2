@@ -15,10 +15,9 @@ const data = {
 
 const datas = {
   ...data,
+  name: "Rio Prayoga Teja Putra",
+  email: "rio@gmail.com",
+  hobby: "Playing Football",
 };
-
-datas.name = "Rio Prayoga Teja Putra";
-datas.email = "rio@gmail.com";
-datas.hobby = "Playing Football";
 
 console.log(datas);
