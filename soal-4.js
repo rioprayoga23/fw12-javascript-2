@@ -13,6 +13,8 @@ const data = {
   website: "hildegard.org",
 };
 
+//! SOAL-A
+
 const datas = {
   ...data,
   name: "Rio Prayoga Teja Putra",
@@ -21,3 +23,11 @@ const datas = {
 };
 
 console.log(datas);
+
+//! SOAL-B
+const {
+  address: { street, city },
+} = datas;
+
+console.log(street);
+console.log(city);
